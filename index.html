@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link rel="stylesheet" href="index.css" />
+  <title>e-commerce2</title>
+</head>
+<body>
+  <section class="flex flex-col h-[7rem]">
+    <div class="flex bg-white h-[4.5rem] pt-[0.9rem]">
+      <img src="images/logo.cyber.png" alt="" class="h-[3rem] w-[6.3rem] ml-[5.4rem]" />
+      <form class="ml-[3rem]">   
+        <label for="search" class="mb-2 text-sm font-medium text-[#656565] sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="search" class="block w-[20rem] h-[3rem] p-4 ps-10 text-sm border-solid rounded-lg bg-[#F5F5F5] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+        </div>
+    </form>
+      <ul class="flex ml-[3rem] gap-10  pt-2 font-medium font-['SF Pro Display'] text-[13px] text-[#656565]">
+        <li class="text-black font-medium text-[14px] font-['SF Pro Display']">Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Blog</li>
+      </ul>
+      <div class=" flex w-[13rem] gap-[3rem] ml-[5rem] pt-1">
+        <div class="w-6">
+          <a href="#"><img src="images/Favorites.png" alt="" /></a>
+        </div>
+        <div class="w-6"><a href="#"><img src="images/cart1.png" alt=""></a>
+        </div>
+        <div class="w-5"><a href="#"><img src="images/user.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="flex bg-[#2E2E2E] text-[#6c6a6d]  justify-around h-[2.7rem]">
+      <div class="flex items-center gap-2  w-[5rem] ml-[5rem]">
+        <img src="images/Phones.png" alt="" class="w-4 bg-[#6c6a6d] border-[#6c6a6d] h-[1.3rem]">
+        <p class="font['SF Pro Display'] font-medium text-16px">Phones</p>
+      </div>
+      <div class="flex gap-2  items-center w-[5rem] ml-[2rem]">
+        <img src="images/Computers.png" alt="" class="w-4 border-[#6c6a6d] h-[1.3rem]">
+        <p class="font['SF Pro Display'] font-medium text-16px">Computers</p>
+      </div>
+      <div class="flex gap-2  items-center w-[12rem] ml-[5rem]">
+        <img src="images/smart-watch" alt="" class="w-5  h-[1.4rem]">
+        <p class="font['SF Pro Display'] items-center font-medium text-11px">Smart Watches</p>
+      </div>
+      <div class="flex gap-2  items-center w-[5rem] mr-[4rem]">
+        <img src="images/Cameras.png" alt="" class="w-5 h-[1.3rem]">
+        <p class="font['SF Pro Display'] font-medium text-16px">Cameras</p>
+      </div>
+      <div class="flex  w-[5rem] gap-3  items-center mr-[6rem]">
+        <img src="images/casque-ent" alt="" class="w-4 h-[1.1rem]">
+        <p class="font['SF Pro Display'] font-medium text-16px">Headphones</p>
+      </div>
+      <div class="flex gap-2  items-center w-[5rem] mr-[5.5rem]">
+        <img src="images/Gaming.png" alt="" class="w-5 h-[1.4rem]">
+        <p class="font['SF Pro Display'] font-medium text-16px">Gaming</p>
+      </div>
+    </div>
+  </section>
+  <section class="flex h-[5rem]">
+    <div class="flex ml-[6rem] pt-[1.7rem]">
+      <p class="text-[#A4A4A4] font-medium font-['SF Pro Display']">Home</p>
+      <div class="pt-[0.1rem] ml-[0.8rem]">
+        <img src="images/sens-droit" alt="">
+      </div>
+      <p class="font-['SF Pro Display'] text-[#A4A4A4] ml-[0.7rem] font-medium text-17px">Catalog</p>
+      <div class="pt-[0.1rem] ml-[0.8rem]">
+        <img src="images/sens-droit" alt="">
+      </div>
+      <p class="font-['SF Pro Display'] text-black ml-[0.7rem] font-medium text-17px">Smartphones</p>
+    </div>
+  </section>
+  <section class="flex bg-red-400 w-4/4 ml-[6rem] mr-[4rem] h-[40rem]">
+    <div class="flex flex-col h-[6rem] gap-4 w-1/4 ">
+     <div class="border-[#B5B5B5] border-b-2">
+      <div class="flex">
+        <p class="font-medium font-['SF Pro Display'] pt-[2rem] text-black text-17px">Price</p>
+      <div class="ml-[15rem] pt-[2.6rem]">
+        <img src="images/sens-haut.png" alt="">
+      </div>
+      </div>
+     </div>
+      <div class="font-normal font-['SF Pro Display'] text-[#A4A4A4] ">
+        <p>From </p>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4 bg-slate-300">
+      <div class="flex font-medium text-[#6C6C6C] font-['SF Pro Display'] pt-[2.3rem] ml-[2rem] ">
+        <p>Selected Products</p>
+        <p>:</p>
+        <p class="text-black font-medium ml-[0.4rem] text-[1.1rem] font-['SF Pro Display']">85</p>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4 bg-green-400">
+      <div class="flex font-medium text-[#6C6C6C] font-['SF Pro Display'] pt-[2.3rem] ml-[2rem] ">
+        <p>Selected Products</p>
+        <p>:</p>
+        <p class="text-black font-medium ml-[0.4rem] text-[1.1rem] font-['SF Pro Display']">85</p>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4 bg-yellow-400">
+      <div class="flex">
+        <button class=" border-solid border-[0.1rem] border-[#D4D4D4] h-[2.4rem] text-white w-[16.5rem] ml-[1rem] rounded">By rating</button>
+        <div><img src="images/sens-bas" alt=""></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
